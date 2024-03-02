@@ -1,0 +1,28 @@
+/* Style for the info banner */
+.info-banner {
+    display: none;
+    position: top;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #dd8a8a;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Close button style */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
