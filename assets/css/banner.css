@@ -5,7 +5,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #dd8a8a;
+    background-color: #cfd49c;
     padding: 20px;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   }
@@ -26,3 +26,21 @@
     cursor: pointer;
   }
   
+
+  .banner {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Style for the WhatsApp icon */
+  .whatsapp-icon {
+    width: 30px;
+    height: 30px;
+  }
