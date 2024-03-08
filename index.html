@@ -20,20 +20,56 @@
 		</style>
 	</head>
 	<body class="is-preload">
+
 			<div id="infoBanner" class="info-banner">
-				<span class="close" onclick="closeBanner()">&times;</span>
-				<p><b>Shashikala will be unavailable from March 29, 2024 till June 15, 2024 in Mysore and will be teaching classes in Bhagsunag, Himachal. Please <a href="#contact">Contact Us</a>. Have a look at <a href="#services">Classes offered</a>.</b></p>
-				
+				<span class="close" onclick="hideBanner()">&times;</span>
+				<p><b>Shashikala will be teaching classes in Bhagsunag, Himachal from April 4 till June 12, 2024. <a href="#contact">   Contact Us</a> for more details. Refer to types of<a href="#services"> classes offered</a>.</b></p>
 				<!-- <video controls style="width: 100%; height: 10%;">
 					<source src="video/promotion/yoga-invite.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video> -->
+				<div style="display: flex; justify-content: center;">
+					<img src="images/yoga-bhagsu.jpg" alt="" style="width: 25%; height: 50%;"/>
+				</div>
 			</div>
+	
 		<!-- Wrapper -->
 			<div id="wrapper">
+<style>
+	.menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+	}
 
+	.menu li {
+		float: left;
+	}
+
+	.menu li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-weight: bold; /* This will make the text bolder */
+	}
+
+	.menu li a:hover {
+		background-color: #111;
+	}
+</style>
+
+<ul class="menu">
+	<li><a href="#intro">Home</a></li>
+	<li><a href="#services">Services</a></li>
+	<li><a href="#testimonial">Testimonial</a></li>
+	<li><a href="#story">About</a></li>
+</ul>
 				<!-- Intro -->
-					<section class="intro">
+					<section class="intro" id="intro">
 						<header>
 							<h1>Ashtanga Yoga with Shashikala</h1>
 							<p>Welcome to our Ashtanga Yoga studio, where we offer a sanctuary for those seeking balance, strength, and inner peace through the ancient practice of Ashtanga Yoga. Rooted in tradition yet adaptable to modern lifestyles, Ashtanga Yoga offers a dynamic and holistic approach to physical, mental, and spiritual well-being. Thank you - Shashikala</p>
@@ -43,21 +79,19 @@
 							</ul>
 						</header>
 						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/yoga_group.jpg" alt="" /></span>
+							<span class="image main"><img src="images/yoga_group.jpg" alt="" style="width: 100%; height: auto;" /></span>
 						</div>
 					</section>
 
 				<!-- Section -->
-					<section id="first">
+					<section id="story">
 						<header>
 							<h2>Our story</h2>
 						</header>
 						<div class="content">
 							<p><strong>Our story</strong> Shashikala is a ashtanga yoga teacher in Mysore, India. There were actually only two female teachers in Mysore: Saraswathi, Shri K. Pattabhi Jois daughter, and Shashikala. Shashikala practiced with Pattabhi Jois for about 15 years, from 1994 until 2009 when he passed away. She now teaches ashtanga yoga at The Three Sisters Yogashala near Lakshmipuram. Shashikala is the youngest of the famous three sisters. For many years they have been offering different services to yogis who come to practice ashtanga yoga in Mysore</p>
 							<span class="image main"><img src="images/Shashikala-Yoga-Mysore.jpg" alt="" /></span>
-							<!-- <ul class="actions stacked">
-								<li><a href="./story/story.html" class="button">Learn More</a></li>
-							</ul> -->
+
 						</div>
 					</section>
 
@@ -75,7 +109,26 @@
 							<p><b>Mysuru style practice: </b>Dive deep into the essence of Ashtanga Yoga with our Mysore-style classes. In this self-paced format, students receive personalized instruction and adjustments tailored to their individual needs, allowing for a transformative and empowering practice experience.</p>
 						    <p><b>Pranayama: </b>Pranayama is a fundamental aspect of yoga practice that involves various breathing techniques. In Sanskrit, "prana" means life force or vital energy, and "ayama" means control or expansion. Therefore, pranayama can be understood as the practice of controlling or expanding one's life force through breath.</p>
 							<p><b>Mudra: </b>In yoga and meditation, a mudra is a symbolic or ritual gesture, usually performed with the hands and fingers. Mudras can facilitate the flow of energy in the body and are often used in conjunction with pranayama (breathing exercises) and meditation practices.</b></p>
-						    <p><b>Teacher Training: </b>Teacher training has the following included pratice 6-8 am, 10-12 am stretching and adjustments and 2-4 pm mudras and full vinyasa</p>
+						    <p><b>Teacher Training: </b>Teacher training has the following included 
+							<table>
+								<tr>
+									<th>Time</th>
+									<th>Description</th>
+								</tr>
+								<tr>
+									<td>6-8 am</td>
+									<td>Practice</td>
+								</tr>
+								<tr>
+									<td>10-12 am</td>
+									<td>Stretching and Adjustments</td>
+								</tr>
+								<tr>
+									<td>2-4 pm</td>
+									<td>Mudras and Full Vinyasa</td>
+								</tr>
+							</table>
+							</p>
 						</div>
 					</section>
 
@@ -137,7 +190,7 @@
 					</section> -->
 
 				<!-- Section -->
-					<section>
+					<section id="testimonial">
 						<header>
 							<h2>Testimonial</h2>
 							<h6><a href="https://www.google.com/search?q=The+Three+Sisters+Yoga+Shala+reviews#ip=1&lrd=0x3baf700f0d8fac1b:0xbf78d0b62c5ed31b,1,,,," target="_blank">The Three Sisters Yoga Shala - Google Reviews</a>
@@ -151,7 +204,11 @@
 
 								I strongly recommend practicing here.
 							</p> </br><strong>Clare Nicholls</strong> </p>
+							<ul class="actions stacked">
+								<li><a href="./story/story.html" class="button">Learn More</a></li>
+							</ul>
 						</div>
+						
 					</section>
 
 				<!-- Elements -->

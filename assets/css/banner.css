@@ -1,20 +1,26 @@
 /* Style for the info banner */
 .info-banner {
-    display: none;
-    position: top;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #cfd49c;
-    padding: 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgb(156, 166, 156);
+  padding: 20px;
+  transition: opacity 0.5s ease;
+  z-index: 9999; /* Add this line */
+}
+
+body:hover .info-banner { 
+  display: block;
+}
   
   /* Close button style */
   .close {
-    color: #aaa;
+    color: #ebe2e2;
     float: right;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: bold;
     cursor: pointer;
   }

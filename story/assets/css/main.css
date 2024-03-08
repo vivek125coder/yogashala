@@ -2637,6 +2637,9 @@ input, select, textarea {
 		.image img {
 			display: block;
 			border-radius: 4px;
+			width: 100%;  /* Adjust as needed */
+			height: auto; /* Adjust as needed */
+			object-fit: cover; /* This will ensure that your images cover the full width/height of their container without stretching */		
 		}
 
 		.image.left, .image.right {
@@ -2644,9 +2647,9 @@ input, select, textarea {
 			max-width: 10rem;
 		}
 
-			.image.left img, .image.right img {
-				width: 100%;
-			}
+		.image.left img, .image.right img {
+			width: 100%;
+		}
 
 		.image.left {
 			float: left;
