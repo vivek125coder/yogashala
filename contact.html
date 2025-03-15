@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Contact Us - Shashikala Ashtanga Yoga</title>
+    <style>
+        /* Modern styles for the contact page */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: #efe7e7;
+            padding: 20px;
+            text-align: center;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .menu li {
+            margin: 0 15px;
+        }
+        .menu a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .menu a:hover {
+            background: #555;
+            color: #fff;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        .items {
+            list-style: none;
+            padding: 0;
+        }
+        .items li {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .items li:hover {
+            transform: translateY(-5px);
+        }
+        .items h3 {
+            color: #7d928e;
+            margin-bottom: 10px;
+        }
+        .items a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .items a:hover {
+            color: #7d928e;
+        }
+        .whatsapp-icon {
+            width: 24px;
+            vertical-align: middle;
+        }
+        .icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        .icons a {
+            color: #333;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .icons a:hover {
+            color: #7d928e;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Get in Touch</h1>
+        <ul class="menu">
+            <li><a href="index.html" style="background: none; color: #8a9e9a; font-weight: bold;">Home</a></li>
+            <li><a href="services.html" style="background: none; color: #8a9e9a; font-weight: bold;">Services</a></li>
+            <li><a href="gallery.html" style="background: none; color: #8a9e9a; font-weight: bold;">Gallery</a></li>
+            <li><a href="testimonial.html" style="background: none; color: #8a9e9a; font-weight: bold;">Testimonials</a></li>
+            <li><a href="contact.html" style="background: none; color: #8a9e9a; font-weight: bold;">Contact Us</a></li>
+        </ul>
+    </header>
+    <section id="contact">
+
+        <div class="content">
+            <p><strong>Contact Us</strong></p>
+            <ul class="items">
+                <li>
+                    <h3>Email</h3>
+                    <a href="#">threesistersyoga@gmail.com</a>
+                </li>
+                <li>
+                    <h3>Phone</h3>
+                    <a href="#">(91) 8762431359</a>
+                    <p>To send us a message on WhatsApp  <a href="https://api.whatsapp.com/send?phone=918762431359"><img class="whatsapp-icon" src="images/gallery/icons/whatsapp-icon.png" alt="WhatsApp Icon"></a></p>
+                </li>
+                <li>
+                    <h3>Address</h3>
+                    <span>Three Sisters Yoga Shala
+                        # 366, Chaluvamba Agrahara
+                        K.R. Mohalla (Next to Kaveri Hotel)
+                        Mysore 570004. India
+                    </span>
+                    <p>To find our location, click <a href="https://www.google.com/maps?q=The+Three+Sisters+Yoga+Shala">here</a> to open Google Maps.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="wrapper style1 align-center" style="position: fixed; bottom: -100px; width: 100%; background: #efe7e7; padding: 10px 0; transition: bottom 0.3s ease;">
+        <div class="inner" style="text-align: center;">
+            <ul class="icons" style="margin: 0; padding: 0; list-style: none; display: flex; justify-content: center;">
+                <li style="display: inline-block; margin: 0 10px;"><a href="https://www.facebook.com/3sistersyogashala/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                <li style="display: inline-block; margin: 0 10px;"><a href="https://www.instagram.com/shashikalagovinda/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            </ul>
+            <div class="copyright" style="margin-top: 10px;">&copy; Shashikala Ashtanga Yoga. All rights reserved</div>
+        </div>
+    </footer>
+    
+    <!-- Add these scripts before the closing body tag in all pages except index.html -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const footer = document.querySelector('footer');
+            const windowHeight = window.innerHeight;
+            const scrollPosition = window.scrollY;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            // Show footer only when scrolled to bottom
+            if (windowHeight + scrollPosition >= documentHeight - 10) {
+                footer.style.bottom = '0';
+            } else {
+                footer.style.bottom = '-100px';
+            }
+        });
+    </script>
+    
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const footer = document.querySelector('footer');
+            const windowHeight = window.innerHeight;
+            const scrollPosition = window.scrollY;
+            const documentHeight = document.documentElement.scrollHeight;
+            
+            if (e.clientY > windowHeight - 100 || windowHeight + scrollPosition >= documentHeight - 50) {
+                footer.style.bottom = '0';
+            } else {
+                footer.style.bottom = '-100px';
+            }
+        });
+    </script> 
+</body>
+</html>

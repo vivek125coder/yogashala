@@ -1,587 +1,171 @@
 <!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 	<head>
-		<title>Shashikala Ashtanga Yoga</title>
+		<title>Ashtanga Yoga with Shashikala</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/banner.css">
 		<style>
-			.stars {
-			  font-size: 24px;
+			/* Modern styles for the home page */
+			body {
+				font-family: 'Open Sans', sans-serif;
+				margin: 0;
+				padding: 0;
+				background: #f8f8f8;
+				color: #444;
+				line-height: 1.6;
+			}
+			.header {
+				background: #f5f0f0;
+				padding: 20px;
+				text-align: center;
+			}
+			.header h1 {
+				font-size: 1.8em;
+				margin-bottom: 20px;
+			}
+			.menu {
+				display: flex;
+				justify-content: center;
+				list-style: none;
+				padding: 0;
+				gap: 15px;
+			}
+			.menu li {
+				margin: 0;
+			}
+			.menu a {
+				display: inline-block;
+				color: #fff;
+				text-decoration: none;
+				padding: 10px 20px;
+				border-radius: 5px;
+				transition: all 0.3s ease;
+				font-weight: 400;
+				background: #8a9e9a;
+			}
+			.menu a:hover {
+				background: #6d8380;
+				transform: translateY(-2px);
+			}
+			.content {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 40px 20px;
+				background: #fff;
+				border-radius: 8px;
+				box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+				margin-bottom: 40px; /* Added margin between sections */
+			}
+			.actions {
+				margin: 20px 0;
+			}
+			.actions li {
+				list-style: none;
+			}
+			.actions a {
+				display: inline-block;
+				padding: 10px 20px;
+				background: #8a9e9a;
+				color: white;
+				text-decoration: none;
+				border-radius: 5px;
+				transition: background 0.3s;
+				font-weight: 400;
+			}
+			.actions a:hover {
+				background: #6d8380;
 			}
 		</style>
 	</head>
-	<body class="is-preload">
+	<body>
+		<header class="header">
+			<h1>Welcome to Shashikala Ashtanga Yoga</h1>
+			<ul class="menu">
+				<li><a href="index.html" style="background: none; color: #8a9e9a; font-weight: bold;">Home</a></li>
+				<li><a href="services.html" style="background: none; color: #8a9e9a; font-weight: bold;">Services</a></li>
+				<li><a href="gallery.html" style="background: none; color: #8a9e9a; font-weight: bold;">Gallery</a></li>
+				<li><a href="testimonial.html" style="background: none; color: #8a9e9a; font-weight: bold;">Testimonials</a></li>
+				<li><a href="contact.html" style="background: none; color: #8a9e9a; font-weight: bold;">Contact Us</a></li>
+			</ul>
+		</header>
 
-			<div id="infoBanner" class="info-banner">
-				<span class="close" onclick="hideBanner()">&times;</span>
-				<p><b>Shashikala will be teaching classes in Bhagsunag, Himachal from April 4 till June 12, 2024. <a href="#contact" onclick="hideBanner()">  <span class="blink">Contact Us</span></a> for more details. Refer to types of<a href="#services"> classes offered</a>.</b></p>
-
-				<p><b>Help us spread the word by writing a review if you have taken classes with us. <a href="https://www.google.com/search?q=The+Three+Sisters+Yoga+Shala&sca_esv=224fa05bca59979e&ei=8gPrZZaACq-s5NoPheuvkA4&ved=0ahUKEwiWwdfn1OSEAxUvFlkFHYX1C-IQ4dUDCBE&uact=5&oq=The+Three+Sisters+Yoga+Shala&gs_lp=Egxnd3Mtd2l6LXNlcnAiHFRoZSBUaHJlZSBTaXN0ZXJzIFlvZ2EgU2hhbGEyCxAAGIAEGKIEGLADMgsQABiJBRiiBBiwA0iNB1ClBVilBXABeACQAQCYAQCgAQCqAQC4AQPIAQD4AQGYAgGgAgSYAwCIBgGQBgKSBwExoAcA&sclient=gws-wiz-serp#lrd=0x3baf700f0d8fac1b:0xbf78d0b62c5ed31b,3,,,," target="_blank"><span class="blink">Leave a review</span></a></p></b></p><!-- <video controls style="width: 100%; height: 10%;">
-					<source src="video/promotion/yoga-invite.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video> -->
-				<div style="display: flex; justify-content: center;">
-					<img src="images/yoga-bhagsu.jpg" alt="" style="width: 25%; height: 50%;"/>
+		<section class="intro" id="intro">
+			<div class="content">
+				<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2em;">
+					<header style="flex: 1; padding-right: 2em;">
+						<h2>Ashtanga Yoga with Shashikala</h2>
+						<p>Welcome to our Ashtanga Yoga studio, a peaceful sanctuary where you can discover balance, strength, and inner tranquility through the timeless practice of Ashtanga Yoga. Drawing from ancient wisdom while embracing modern sensibilities, our approach offers a gentle yet powerful path to physical, mental, and spiritual harmony. With gratitude - Shashikala</p>
+					</header>
 				</div>
+				<span class="image main"><img src="images/yoga_group.jpg" alt="Group yoga practice" /></span>
 			</div>
-	
-		<!-- Wrapper -->
-			<div id="wrapper">
-<style>
-	.menu {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #333;
-	}
+		</section>
 
-	.menu li {
-		float: left;
-	}
+		<section id="story" class="content">
+			<header>
+				<h2>Our Story</h2>
+			</header>
+			<p>Shashikala shares her wisdom as an Ashtanga yoga teacher in the sacred city of Mysore, India. She holds the distinction of being one of just two female teachers who taught in Mysore, alongside Saraswathi, daughter of the revered Shri K. Pattabhi Jois. Her journey in yoga spans over 15 enriching years, during which she practiced with Pattabhi Jois from 1994 until his transition in 2009. Today, she guides students at The Three Sisters Yogashala near Lakshmipuram, where, as the youngest of three sisters, she and her family continue their cherished tradition of supporting yoga practitioners who journey to Mysore to deepen their practice.</p>
+			<span class="image main"><img src="images/Shashikala-Yoga-Mysore.jpg" alt="Shashikala teaching yoga" /></span>
+		</section>
 
-	.menu li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
-		font-weight: bold; /* This will make the text bolder */
-	}
-
-	.menu li a:hover {
-		background-color: #111;
-	}
-</style>
-
-<ul class="menu">
-	<li><a href="#intro">Home</a></li>
-	<li><a href="#services">Services</a></li>
-	<li><a href="#testimonial">Testimonial</a></li>
-	<li><a href="#story">About</a></li>
-</ul>
-				<!-- Intro -->
-					<section class="intro" id="intro">
-						<header>
-							<h1>Ashtanga Yoga with Shashikala</h1>
-							<p>Welcome to our Ashtanga Yoga studio, where we offer a sanctuary for those seeking balance, strength, and inner peace through the ancient practice of Ashtanga Yoga. Rooted in tradition yet adaptable to modern lifestyles, Ashtanga Yoga offers a dynamic and holistic approach to physical, mental, and spiritual well-being. Thank you - Shashikala</p>
-
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image main"><img src="images/yoga_group.jpg" alt="" style="width: 100%; height: auto;" /></span>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section id="story">
-						<header>
-							<h2>Our story</h2>
-						</header>
-						<div class="content">
-							<p><strong>Our story</strong> Shashikala is a ashtanga yoga teacher in Mysore, India. There were actually only two female teachers in Mysore: Saraswathi, Shri K. Pattabhi Jois daughter, and Shashikala. Shashikala practiced with Pattabhi Jois for about 15 years, from 1994 until 2009 when he passed away. She now teaches ashtanga yoga at The Three Sisters Yogashala near Lakshmipuram. Shashikala is the youngest of the famous three sisters. For many years they have been offering different services to yogis who come to practice ashtanga yoga in Mysore</p>
-							<span class="image main"><img src="images/Shashikala-Yoga-Mysore.jpg" alt="" /></span>
-
-						</div>
-					</section>
-
-				<!-- Section -->
-					<section id="services">
-						<header>
-							<h2>Services provided</h2>
-						</header>
-						<div class="content">
-							<p><b>We offer the following services which are available in daily(drop in classes), Weekly or monthly formats. The services can be taken in a combination too</b></p>
-							<p><img src="images/gallery/icons/guru32.png" alt="" sizes="16x16" rel="icon">  <b>Mysuru style practice: </b>Dive deep into the essence of Ashtanga Yoga with our Mysore-style classes. In this self-paced format, students receive personalized instruction and adjustments tailored to their individual needs, allowing for a transformative and empowering practice experience.</p>
-						    <p><img src="images/gallery/icons/guru32.png" alt="" sizes="16x16" rel="icon"> <b>Pranayama: </b>Pranayama is a fundamental aspect of yoga practice that involves various breathing techniques. In Sanskrit, "prana" means life force or vital energy, and "ayama" means control or expansion. Therefore, pranayama can be understood as the practice of controlling or expanding one's life force through breath.</p>
-							<p><img src="images/gallery/icons/guru32.png" alt="" sizes="16x16" rel="icon"> <b>Mudra: </b>In yoga and meditation, a mudra is a symbolic or ritual gesture, usually performed with the hands and fingers. Mudras can facilitate the flow of energy in the body and are often used in conjunction with pranayama (breathing exercises) and meditation practices.</b></p>
-						    <p><img src="images/gallery/icons/guru32.png" alt="" sizes="16x16" rel="icon"> <b>Teacher Training: </b>Teacher training has the following included 
-							<table>
-								<tr>
-									<th>Time</th>
-									<th>Description</th>
-								</tr>
-								<tr>
-									<td>6-8 am</td>
-									<td>Practice</td>
-								</tr>
-								<tr>
-									<td>10-12 am</td>
-									<td>Stretching and Adjustments</td>
-								</tr>
-								<tr>
-									<td>2-4 pm</td>
-									<td>Mudras and Full Vinyasa</td>
-								</tr>
-							</table>
-							</p>
-						</div>
-					</section>
-
-				<!-- Section -->
-					<!-- <section>
-						<header>
-							<h2>Ultrices erat magna sed condimentum</h2>
-						</header>
-						<div class="content">
-							<p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p> -->
-
-							<!-- Section -->
-								<!-- <section>
-									<header>
-										<h3>Erat aliquam</h3>
-										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/01.jpg" class="landscape"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/04.jpg" class="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section> -->
-
-							<!-- Section -->
-								<!-- <section>
-									<header>
-										<h3>Nisl consequat</h3>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/05.jpg" class="landscape"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section> -->
-
-							<!-- Section -->
-								<!-- <section>
-									<header>
-										<h3>Lorem gravida</h3>
-										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
-									</header>
-									<div class="content">
-										<div class="gallery">
-											<a href="images/gallery/fulls/08.jpg" class="portrait"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/09.jpg" class="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section> -->
-
-						<!-- </div>
-					</section> -->
-
-				<!-- Section -->
-					<section id="testimonial">
-						<header>
-							<h2>Testimonial</h2>
-							<h6><a href="https://www.google.com/search?q=The+Three+Sisters+Yoga+Shala+reviews#ip=1&lrd=0x3baf700f0d8fac1b:0xbf78d0b62c5ed31b,1,,,," target="_blank">The Three Sisters Yoga Shala - Google Reviews</a>
-							</h6>
-						</header>
-						<div class="content">
-							<div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-							<p>What a wonderful teacher Shashikala is! My husband is quite new to yoga sessions and I practise Vinyasa Flow regularly in London, Shashikala, very skilfully, led sessions that meant we both enjoyed the experience whilst also benefitting from learning more about Ashtanga style yoga. We were in Mysore for a week and came every morning before breakfast as it was such a worthwhile experience.</p> </br><strong>Sharon Owen</strong> </p>
-						    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-							<p>Shashikala is a wonderful, kind, dedicated and knowledgeable teacher. For three weeks she has worked with me to refine and prefect my practice.
-
-								I strongly recommend practicing here.
-							</p> </br><strong>Clare Nicholls</strong> </p>
-							<ul class="actions stacked">
-								<li><a href="./story/story.html" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						
-					</section>
-
-				<!-- Elements -->
-				<!--
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
-
-							<section>
-								<header>
-									<h3>Text</h3>
-								</header>
-								<div class="content">
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<hr />
-									<h5>Blockquote</h5>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h5>Preformatted</h5>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
-
-print 'Sorted in ' + i + ' iterations.';</code></pre>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Lists</h3>
-								</header>
-								<div class="content">
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Table</h3>
-								</header>
-								<div class="content">
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
-
-							<section>
-								<header>
-									<h3>Form</h3>
-								</header>
-								<div class="content">
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</div>
-							</section>
-
-						</div>
-					</section>
-				-->
-
-				<!-- Section -->
-					<section id="contact">
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-						<div class="content">
-							<p><strong>Contact Us</strong></p>
-							<ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="#">threesistersyoga@gmail.com</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<a href="#">(91) 8762431359</a>
-									<p>To send us a message on WhatsApp  <a href="https://api.whatsapp.com/send?phone=918762431359"><img class="whatsapp-icon" src="images/gallery/icons/whatsapp-icon.png" alt="WhatsApp Icon"></a></p>
-
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>Three Sisters Yoga Shala
-										# 366, Chaluvamba Agrahara
-										K.R. Mohalla (Next to Kaveri Hotel)
-										Mysore 570004. India
-									</span>
-									<p>To find our location, click <a href="https://www.google.com/maps?q=The+Three+Sisters+Yoga+Shala">here</a> to open Google Maps.</p>
-
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-										<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-										<li><a href="https://www.facebook.com/3sistersyogashala/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="https://www.instagram.com/shashikalagovinda/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-
-									</ul>
-								</li>
-							</ul>
-							<!-- <form action="https://formspree.io/f/moqgwppg" method="POST">
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form> -->
-						</div>
-						<!-- <footer>
-							<ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="#">threesistersyoga@gmail.com</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<a href="#">(91) 8762431359</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>Three Sisters Yoga Shala
-										# 366, Chaluvamba Agrahara
-										K.R. Mohalla (Next to Kaveri Hotel)
-										Mysore 570004. India</span>
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-										 <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> 
-										<li><a href="https://www.facebook.com/3sistersyogashala/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										 <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> 
-
-									</ul>
-								</li>
-							</ul>
-						</footer> -->
-					</section>
-
-				<!-- Copyright -->
-					<div class="copyright">&copy; Shashikala Ashtanga Yoga. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
-
+		<footer class="wrapper style1 align-center" style="position: fixed; bottom: -100px; width: 100%; background: #efe7e7; padding: 10px 0; transition: bottom 0.3s ease;">
+			<div class="inner" style="text-align: center;">
+				<ul class="icons" style="margin: 0; padding: 0; list-style: none; display: flex; justify-content: center;">
+					<li style="display: inline-block; margin: 0 10px;"><a href="https://www.facebook.com/3sistersyogashala/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li style="display: inline-block; margin: 0 10px;"><a href="https://www.instagram.com/shashikalagovinda/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+				<div class="copyright" style="margin-top: 10px;">&copy; Shashikala Ashtanga Yoga. All rights reserved</div>
 			</div>
+		</footer>
+		<script>
+			window.addEventListener('scroll', function() {
+				const footer = document.querySelector('footer');
+				const windowHeight = window.innerHeight;
+				const scrollPosition = window.scrollY;
+				const documentHeight = document.documentElement.scrollHeight;
+				
+				// Show footer only when scrolled to bottom
+				if (windowHeight + scrollPosition >= documentHeight - 10) {
+					footer.style.bottom = '0';
+				} else {
+					footer.style.bottom = '-100px';
+				}
+			});
+		</script>
+
+		<script>
+			document.addEventListener('mousemove', function(e) {
+				const footer = document.querySelector('footer');
+				const windowHeight = window.innerHeight;
+				const scrollPosition = window.scrollY;
+				const documentHeight = document.documentElement.scrollHeight;
+				
+				if (e.clientY > windowHeight - 100 || windowHeight + scrollPosition >= documentHeight - 50) {
+					footer.style.bottom = '0';
+				} else {
+					footer.style.bottom = '-100px';
+				}
+			});
+		</script>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/banner.js"></script>
-			<script async src="https://www.googletagmanager.com/gtag/js?id=G-LX7PY7E3Y1"></script>
-			<script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LX7PY7E3Y1"></script>
+		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
 			gtag('config', 'G-LX7PY7E3Y1');
-			</script>
-
+		</script>
 	</body>
 </html>
